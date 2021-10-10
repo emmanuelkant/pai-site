@@ -1,0 +1,1 @@
+rm -Rf output/ && mkdir output && cp -R css ./output/ && cp -R fonts ./output/ && cp -R img ./output/ && cp index.html ./output/ && cp robots.txt ./output/ && cp favicon.ico ./output/

@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.ttf');
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body, main {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.fundo-preto {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: url('/img/plano-de-fundo.webp');
+    background-position: center center;
+}
+
+.sessao-principal {
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.sessao-principal * {
+    text-align: center;
+    word-break: break-word;
+}
+
+.sessao-principal h1 {
+    font-size: 40px;
+}
+
+.sessao-principal h2 {
+    font-size: 22px;
+}
+
+.sessao-principal h3 {
+    font-size: 20px;
+}
+
+.sessao-principal p {
+    margin-top: 20px;
+}
+
+footer {
+    flex: 1;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .sessao-principal h1 {
+        font-size: 60px;
+    }
+
+    .sessao-principal h2 {
+        font-size: 32px;
+    }
+
+    .sessao-principal h3 {
+        font-size: 24px;
+    }
+
+    .sessao-principal a {
+        transition: transform 150ms ease-in-out;
+    }
+
+    .sessao-principal a:hover {
+        transform: scale(1.3);
+        transition: transform 150ms ease-in-out;
+    }
+  }
